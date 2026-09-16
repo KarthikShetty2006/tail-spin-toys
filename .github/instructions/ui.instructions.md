@@ -20,6 +20,12 @@ Refer to technology-specific instruction files:
 
 ## Core Principles
 
+### Comments and Documentation
+
+- Comment intent, not mechanics: explain why a non-obvious decision exists rather than restating what the code does.
+- Keep comments concise and current. Update or remove comments when the related behavior changes; treat stale documentation as a bug.
+- Prefer self-documenting names and markup over explanatory comments for straightforward code.
+
 ### Testability
 
 - Every interactive element MUST include a `data-testid` attribute
@@ -49,7 +55,7 @@ Refer to technology-specific instruction files:
 - Create reusable components for common UI patterns
 - Keep components focused on a single responsibility
 - Use props for configuration, not duplication
-- Document component APIs with TypeScript types
+- Document component APIs with TypeScript types. Every reusable Astro component must document its `Props` interface, including what each prop controls and any nullable or optional behavior.
 
 ## Development Workflow
 
